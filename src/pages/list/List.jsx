@@ -9,10 +9,9 @@ import SearchItem from "../../components/searchItem/SearchItem";
 
 const List = () => {
   const location = useLocation();
-  const [destination, setDestination] = useState(location.state.destination);
   const [date, setDate] = useState(location.state.date);
   const [openDate, setOpenDate] = useState(false);
-  const [options, setOptions] = useState(location.state.options);
+
 
   return (
     <div>
@@ -24,7 +23,7 @@ const List = () => {
             <h1 className="lsTitle">Search</h1>
             <div className="lsItem">
               <label>Destination</label>
-              <input placeholder={destination} type="text" />
+              <input placeholder="Destination" type="text" />
             </div>
             <div className="lsItem">
               <label>Booking Date</label>
@@ -61,7 +60,7 @@ const List = () => {
                     type="number"
                     min={1}
                     className="lsOptionInput"
-                    placeholder={options.adult}
+                    placeholder="Options"
                   />
                 </div>
                 <div className="lsOptionItem">
@@ -70,7 +69,7 @@ const List = () => {
                     type="number"
                     min={0}
                     className="lsOptionInput"
-                    placeholder={options.children}
+                    placeholder="Options"
                   />
                 </div>
               </div>

@@ -1,5 +1,4 @@
 import "./navbar.css"
-import JetSetLogo from "../../assets/images/jetSetGoLOGO.svg"
 const Navbar = () => {
   return (
     <div className="navbar">
