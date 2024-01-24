@@ -7,20 +7,29 @@ background-image: url("../../assets/images/beech-footer.jpg");
 
 .footer{
   width: 100%;
-  width: 1024px;
   font-size: 12px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
 }
 
 .fLists{
   width: 100%;
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 50px;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+  font-size: 1.1rem;
 }
+
 
 .fList{
   list-style: none;
   padding: 0;
+}
+
+.fText{
+  font-size: 1rem;
 }
 
 .fListItem{

@@ -9,10 +9,14 @@ import SearchItem from "../../components/searchItem/SearchItem";
 
 const List = () => {
   const location = useLocation();
+  const [source, setSource] = useState(location.state.source);
+  const [destination, setDestination] = useState(location.state.destination);
   const [date, setDate] = useState(location.state.date);
   const [openDate, setOpenDate] = useState(false);
 
 
+
+  console.log(source,"sourec", destination,"destination", date ,"date")
   return (
     <div>
       <Navbar />
@@ -78,14 +82,11 @@ const List = () => {
           </div>
           <div className="listResult">
             <SearchItem />
-            <SearchItem />
-            <SearchItem />
-            <SearchItem />
-            <SearchItem />
-            <SearchItem />
-            <SearchItem />
-            <SearchItem />
-            <SearchItem />
+            <SearchItem 
+             source={source}
+             destination={destination}
+             date={date}
+             />
           </div>
         </div>
       </div>

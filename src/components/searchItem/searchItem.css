@@ -68,11 +68,25 @@
 
 .siRating{
   display: flex;
-  justify-content: space-between
+  gap:1rem;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
-.siRating>span{
-  font-weight: 500;
+/* .siRating>span{
+  font-weight: 500;  
+  font-size: 16px;
+  font-weight: bold;
+  color: #003580;
+} */
+.siDesDistancePort{
+  font-weight: 500;  
+  font-size: 16px;
+  font-weight: bold;
+  color: #003580;
+}
+.siDesDistance{
+  font-size: 12px;
 }
 .siRating>button{
  background-color: #003580;

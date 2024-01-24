@@ -15,6 +15,7 @@ import { useNavigate } from "react-router-dom";
 
 const Header = ({ type }) => {
   const [destination, setDestination] = useState("");
+  const [source, setSource] = useState("");
   const [openDate, setOpenDate] = useState(false);
   const [date, setDate] = useState([
     {
@@ -41,7 +42,12 @@ const Header = ({ type }) => {
   };
 
   const handleSearch = () => {
-    navigate("/flights", { state: { destination, date, options } });
+    if (!source || !destination) {
+      // Show an alert if "From" or "Where are you going?" is not filled
+      alert("Please fill in both 'From' and 'Where are you going?'");
+      return;
+    }
+    navigate("/flights", { state: { source, destination, date, options } });
   };
 
   return (
@@ -82,7 +88,7 @@ const Header = ({ type }) => {
                   type="text"
                   placeholder="From"
                   className="headerSearchInput"
-                  onChange={(e) => setDestination(e.target.value)}
+                  onChange={(e) => setSource(e.target.value)}
                 />
               </div>
               <div className="headerSearchItem">
