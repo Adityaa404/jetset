@@ -81,7 +81,6 @@ const List = () => {
             <button>Search</button>
           </div>
           <div className="listResult">
-            <SearchItem />
             <SearchItem 
              source={source}
              destination={destination}

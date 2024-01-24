@@ -28,7 +28,7 @@ These are the functionality integrated
 
 # Demo Limits :
 1. Api which used have its own limitation currently (24-01-2024 :: 11:43 IST) it will act only for
-Mumbai > Chennai , Delhi > Mumbai , Mumbai > Delhi
+Mumbai > Chennai , Delhi > Mumbai 
 2. For other cities it will show No data found .
 
 These things can be modified in future use .
